@@ -11,15 +11,18 @@
 }
 
 #acc{
-    display: block;
+    display: flex;
     justify-content: space-around;
     padding: 20px;
 }
-.art-1{
+.symbol-info{
     display: inline;
     text-align: start;
 }
-.art-2{
-    display: inline;
-    float: right;
+.graf{
+    width: 700px;
+    height: 500px;
+}
+.fundamental-data{
+    height: 820px;
 }
