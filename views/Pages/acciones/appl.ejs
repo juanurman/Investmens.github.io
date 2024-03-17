@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>APPLE</title>
+    <link rel='stylesheet' href='/css/index.css' />
   </head>
   <body>
-      <%- include('./parts/fundamental-data/appl')  %>
+    <%- include('../semantico/header.ejs')  %>
+    <main id="main">
+      <h1 class="h1">
+        Apple Inc.
+      </h1>
+      <section id="acc">
+
+        <article class="art-1">
+          <%- include('../parts/symbol-info/appl.ejs')  %>
+        </article>
+
+        <article class="art-2">
+          <%- include('../parts/graf/appl.ejs')  %>
+        </article>
+        
+        <article class="art-3">
+          <%- include('../parts/fundamental-data/appl.ejs') %>
+        </article>
+
+
+      </section>
+    </main>
   </body>
 </html>
