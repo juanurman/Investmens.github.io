@@ -1,0 +1,25 @@
+#main{
+    height: 100%;
+    width: 100%;
+    
+}
+.h1{
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+#acc{
+    display: block;
+    justify-content: space-around;
+    padding: 20px;
+}
+.art-1{
+    display: inline;
+    text-align: start;
+}
+.art-2{
+    display: inline;
+    float: right;
+}

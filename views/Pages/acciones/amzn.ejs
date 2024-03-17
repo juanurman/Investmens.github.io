@@ -2,14 +2,29 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/css/index.css' />
   </head>
   <body>
-    <main id="">
-      <section id="section">
-        amzn
-      </sectio>
-      <section id="section1">
+    <%- include('../semantico/header.ejs')  %>
+    <main id="main">
+      <h1 class="h1">
+        AMAZON INC.
+      </h1>
+      <section id="acc">
+
+        <article class="art-1">
+          <%- include('../parts/symbol-info/amzn.ejs')  %>
+        </article>
+
+        <article class="art-2">
+          <%- include('../parts/graf/amzn.ejs')  %>
+        </article>
+        
+        <article class="art-3">
+          <%- include('../parts/fundamental-data/amzn.ejs') %>
+        </article>
+
+
       </section>
     </main>
   </body>
