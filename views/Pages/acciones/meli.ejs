@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/css/index.css' />
+  </head>
+  <body>
+    <%- include('../semantico/header.ejs')  %>
+    <main id="main">
+      <h1 class="h1">
+        MERCADO LIBRE INC.
+      </h1>
+      <section id="acc">
+
+        <article class="symbol-info">
+          <%- include('../parts/symbol-info/meli.ejs')  %>
+        </article>
+
+        <article class="graf">
+          <%- include('../parts/graf/meli.ejs')  %>
+        </article>
+        
+        <article class="fundamental-data">
+          <%- include('../parts/fundamental-data/meli.ejs') %>
+        </article>
+
+
+      </section>
+    </main>
+  </body>
+</html>

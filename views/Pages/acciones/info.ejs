@@ -7,13 +7,12 @@
   <body>
     <%- include('../semantico/header.ejs')  %>
     <h1 class="h1-info">BIENVENIDO!</h1>
-    <h2 class="h2-info">ELIJE QUE ACCION QUIERES VER</h2>
+    <h2 class="h2-info">ELIJE QUE ACCIÓN QUIERES VER</h2>
     <section id="acciones">
-      <a href="/info/appl" class="acciones">APPLE</a>
-      <a href="/info/amzn" class="acciones">AMZN</a>
-      <a href="/info/googl" class="acciones">GOOGLE</a>
-      <a href="/info/msft" class="acciones">MICROSOFT</a>
-      <a href="/info/KO" class="acciones">COCA COLA</a>
+      <% acciones.forEach( accion => { %>
+        <a href="/info/<%= accion.nombre%>" class="acciones"> <%= accion.nombre%></a>
+      <% }); %>
     </section>
+    <br>
   </body>
 </html>

@@ -1,6 +1,16 @@
 #acciones{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    font-size: 25px;
+    
+}
+.acciones{
+    color: black;
+    background-color: #fff;
+    width: 100px;
+    border-radius: 20px;
+    text-align: center;
 }
 h1{
     text-align: center;
